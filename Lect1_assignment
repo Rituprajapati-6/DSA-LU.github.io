@@ -5,8 +5,11 @@ for(i = 1 ; i <= n ; i++) {
       printf("..");
  }}
  
- Time Complexity: 
- For the first outer loop in line-2, the time complexity would be O(n) and for the inner loop in line-3, it will be O(n). Since one loop is within another loop, the complexity as a whole will be O(n*n) i.e. O(n^2)
+ Time Complexity:   O(n^2)
+ 
+ Explanation:
+ For the first outer loop in line-3, the time complexity would be O(n) and for the inner loop in line-4, it will be O(n). Since one loop is within another loop, the complexity as a whole will be O(n*n) i.e. O(n^2).
+ 
  
 Question 2:
  
@@ -15,12 +18,13 @@ for(i = 1 ; i <= n ; i *= 3) {
       printf("..");
  }}
  
- Time Complexity:
- For the first outer loop in line-11, time complexity will be O(logn base 3) i.e. O(logn) and for the inner loop, it'll be O(n). So, as a whole, the complexity would be O(logn * n) i.e. O(n*logn)
+ Time Complexity:   O(n*logn)
  
  Explanation: 
- the value of i would go like 1, 1*3, 3*3, 9*3....so on.
+ For the first outer loop in line-16, time complexity will be O(logn base 3) i.e. O(logn) and for the inner loop in line-17, it'll be O(n). So, as a whole, the complexity would be O(logn * n) i.e. O(n*logn)
+ 
+ The value of i would go like 1, 1*3, 3*3, 9*3....so on.
  We can also write it as 3^0, 3^1,  3^3,......3^k
- So, in worst case, n = 3^k => k = logn base 3
+ So, in worst case, n = 3^k => k = log(n) base 3
  
  
