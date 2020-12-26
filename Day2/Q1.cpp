@@ -1,3 +1,5 @@
+//WRITE A PROGRAM FOR DELETING FROM BEGINNING AND FROM ANY POSITION
+
 #include<iostream>
 using namespace std;
 int arr[30];
@@ -21,21 +23,6 @@ void deleteIndex(int ind){
 n--;
 }
 
-//TO ROTATE THE ARRAY BY NO. OF TIMES INPUT BY USER
-void rotate() {
-	int k,j;
-	cout<<"enter no. of rotations: ";
-	cin>>k;
-	cout<<"\nAfter rotating "<<k<<" times, ";
-	for (j=0;j<k;j++){
-	int temp = arr[0];
-	for (i=0;i<n-1;i++){
-		arr[i] = arr[i+1];
-	}
-	arr[i]=temp;
-	}
-}
-
 //TO DISPLAY ELEMENTS OF THE ARRAY
 display(){
 	cout<<"Array is: ";
@@ -54,8 +41,6 @@ int main() {
 		cin>>arr[i];
 	}
 	
-display();
-rotate();
 display();
 delelteBeginning();
 display();
