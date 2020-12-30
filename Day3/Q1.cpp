@@ -28,7 +28,7 @@ void createList(int n)
 }
 
 //TO INSERT A NODE AT SPECIFIC POSITION
-void insert_spe(int item,int location)
+void insert_any(int item,int location)
 {
 	temp=(node*)malloc(sizeof(node));
 	temp->data=item;
@@ -64,7 +64,7 @@ int main()
 	createList(10);
 	cout<<"\noriginal list: ";
 	display();
-	insert_spe(100,2);
+	insert_any(100,2);
 	cout<<"\n\nafter changes:  "; 
 	display();
 	return 0;
