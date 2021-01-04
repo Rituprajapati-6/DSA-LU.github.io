@@ -1,0 +1,7 @@
+
+Question 1
+In the Binary Search algorithm, it is suggested to calculate the mid as
+beg + (end - beg) / 2 instead of (beg + end) / 2. Why is it so?
+
+Solution:
+start + (end – start)/2 is preferred over (start + end)/2 because in case of (start + end)/2, if the start or end value both are INT_MAX, it leads to integer overflow. For Example, (start + end)/2 when used for calculating mid value returns -1. 
