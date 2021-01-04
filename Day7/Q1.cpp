@@ -46,10 +46,10 @@ void Dequeue()	{
 	}
 
 void display(){
-		int count = (rear+MAX_SIZE-front)%MAX_SIZE + 1; // Finding number of elements in queue  
+		int count = (rear+MAX_SIZE-front)%MAX_SIZE + 1;
 		cout<<"\nQueue : ";
 		for(int i = 1; i <count; i++)	{
-			int index = (front+i) % MAX_SIZE; // Index of element while travesing circularly from front
+			int index = (front+i) % MAX_SIZE;
 			cout<<arr[index]<<" ";
 		}
 		cout<<"\n";
