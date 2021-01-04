@@ -48,7 +48,7 @@ void display(int arr[]){
 	cout<<endl;
 }
 
-void min(int arr[]){
+void max(int arr[]){
 	int e=0;
 	if(top==-1){
 		cout<<"empty \n";
@@ -56,12 +56,13 @@ void min(int arr[]){
 	else
 	for (int i=0;i<=top;i++)
 	{
-		if(arr[i]<arr[e]){
+		if(arr[i]>arr[e]){
 			e=i;
 		}
 	}
-	cout<<"\nMin:  "<<arr[e];
+	cout<<"\nMax:  "<<arr[e]<<"\n";
 }
+
 
 int main(){
 	push(arr, 2);
@@ -71,8 +72,8 @@ int main(){
 	push(arr, 11);
 	push(arr, 47);
 	display(arr);
-  	min(arr);
+	max(arr);
 	pop(arr);
 	display(arr);
-	min(arr);
+	max(arr);
 }
