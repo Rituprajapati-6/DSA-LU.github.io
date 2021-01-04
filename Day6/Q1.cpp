@@ -71,7 +71,7 @@ int main(){
 	push(arr, 11);
 	push(arr, 47);
 	display(arr);
-  min(arr);
+  	min(arr);
 	pop(arr);
 	display(arr);
 	min(arr);
